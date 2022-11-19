@@ -12,7 +12,7 @@ A aula05.js foi visto mais sobre funções, nomes de funções são verbos "faç
 
 A aula06.js foi sobre objetos, onde um objeto é uma coleção dinamica de  chaves e valores, ele agrupa chaves e valores podendo ser incrementado informações posteriormente chamando o objeto definindo a chave e passa o valor. Tambem pode ser adicionado funções dentro de um objeto, essa função é chamada de metodo. Tambem da para sobrescrever a função. 
 
-const nomeDoObjeto = {//objeto literal não precisa de uma classe
+const nomeDoObjeto = {   //objeto literal não precisa de uma classe
     chave:'valor',
     chave:20,
 };
@@ -21,8 +21,7 @@ nomeDoObjeto.chave = valor;
 
 Tambem foi visto sobre classes classesAula06.js, sua função é definir como serão os atributos dos objetos, para que eles sejam instanciados e terem um padrão. Tem o constructor que seria como a regra a ser seguida quando a classe é instanciada por exemplo a  classe pessoa por obrigação ela tem que ter um nome e uma idade.
 
-class nomeDaClasse{
-
+class nomeDaClasse {
     atributo1;
     atributo2;
 
@@ -34,13 +33,14 @@ class nomeDaClasse{
     metodo(atributoExterno, atributoExtreno){ // O metodo é uma função dentro de uma classe.
         return || consolo.log + atributoExterno ou this.atributo1 ;// se for um atributoExterno tem que declarar ele se for interno só usar o this.
     }
-
 }
 
 No exercicioAula06.js pratica onde utilizamos a classe pessoa criamos uma função para definir qual pessoa era mais velha e mostrar o nome e que é mais velha.
 No exercicio04.js foi utilizado a orientação a objeto para definir quantos reais seriam gastos com combustivel em uma viagem de carro.
 
-Na aula07.js foi visto sobre listas(arrays)
+Na aula07.js foi visto sobre listas(arrays) e tambem sobre estruturas de repetição for, feito um exemplo onde calculamos a media de um aluno com base em suas notas inseridas em uma lista. Tambem foi visto sobre depuração no vscode
+
+String são uma lista de caracteres
 
 const nomeLista = [valo1,'valor2',valor2];//pode conter string e numericos juntos mas não é usual.
 nomeLista.push('valor4'); //adiciona um valor na lista de forma dinamica.
