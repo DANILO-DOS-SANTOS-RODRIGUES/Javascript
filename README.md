@@ -1,4 +1,4 @@
-Desenvolvendo aspectos da linguagem de programação javascript.
+Desenvolvendo aspectos da linguagem de programação javascript com node.
 
 Na aula.js foi declaração de variaveis e constantes e operadores aritméticos e tambem a mostrar uma mensagem no console, onde tambem teve o primeiro desafio de calcular o gasto com combustivel em uma viagem, tambem usamos o toFixed() para arredondar o resultado. 
 
@@ -52,6 +52,30 @@ nomeLista.shift()//pega o primeiro item da lista e armazena ele, retirando-o da 
 nomeLista.length// mostra o tamanho da lista
 console.log(nomeLista[0]);//trás um valor especifico da lista
 
-No exercicio06.js foi feito um programa que calcula a tabuada de um determinado numero utilizando a estrutura de loop for.
+No exercicio06.js foi feito um programa que calcula a tabuada de um determinado numero, utilizando a estrutura de loop for.
 
-No exercicio07.js foi feito um programa para determinar os numeros pares de uma lista utilizando estruturas condicionais e loop;
+No exercicio07.js foi feito um programa para determinar os numeros pares de uma lista utilizando estrutura condicional if e loop for;
+
+Na oitava aula foi visto sobre importação e exportação. O gets pega o input(a inserção de dados)  e o print seria como um console.log, criamos dois arquivos o main.js e a funcao-auxiliar.js. Na funcoes-auxiliares.js foi feito duas funções, um gets mocado/mocked ou seja esta simulando uma leitura, e um print que seria para a visualização do que foi informado.
+Na main.js estamos importando o que esta dentro das funcoes-auxiliares.js, e para isso usamos o require('./localDaImportacao'), e na funcoes-auxiliares.js temos que exportar para isso utilisamos o module.exports = {funcaoParaExportar1, funcaoParaExportar2} onde o module é um objeto e o exports é um atributo e estamos definindo/atribuindo um objeto  literal dentro dele.
+Tambem foi visto um pouco sobre o ciclo de vida da importação, quando importa a primeira vez o node js roda todo o arquivo que esta sendo importado require('./localDaImportacao') e armazena o "cach" para que ele não precise ser execultado novamente caso houver outra importação.
+
+Tambem foi visto sobre o object destructuring, que é uma forma mais "clean" de pegar os valores de um objeto sem ter que ficar duplicando variavel, por exemplo.
+
+//objeto pessoa
+const pessoa ={
+    nome: 'Danilo',
+    idade:23
+};
+
+//como normalmente é utilizado
+let nome = pessoa.nome;
+let idade = pessoa.idade;
+nome; // => Danilo
+idade; //=>23
+
+//utilizando o object destructuring
+const { nome, idade } = pessoa;
+nome; // => Danilo
+idade; //=>23
+
