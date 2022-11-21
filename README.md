@@ -42,6 +42,8 @@ Na aula07.js foi visto sobre listas(arrays) e tambem sobre estruturas de repeti�
 
 String são uma lista de caracteres
 
+Sintaxe
+
 const nomeLista = [valo1,'valor2',valor2];//pode conter string e numericos juntos mas não é usual.
 nomeLista.push('valor4'); //adiciona um valor na lista de forma dinamica.
 nomeLista[4] = 'valor5';//adiciona um valor a lista de forma direta, tambem pode ser utilizado para substituir um valor.
@@ -49,3 +51,7 @@ nomeLista.pop();//pega o ultimo item da lista e armazena ele, retirando-o da lis
 nomeLista.shift()//pega o primeiro item da lista e armazena ele, retirando-o da lista
 nomeLista.length// mostra o tamanho da lista
 console.log(nomeLista[0]);//trás um valor especifico da lista
+
+No exercicio06.js foi feito um programa que calcula a tabuada de um determinado numero utilizando a estrutura de loop for.
+
+No exercicio07.js foi feito um programa para determinar os numeros pares de uma lista utilizando estruturas condicionais e loop;
